@@ -44,6 +44,12 @@ public class PersonFormBean implements Serializable {
 		persons.setWrappedData(pm.getAllPersons());
 		return persons;
 	}
+	
+	public void updatePerson() {
+		int ile = persons.getRowIndex();
+		pm.updatePerson(ile, person);
+	}
+	
 
 	// Actions
 	public String addPerson() {

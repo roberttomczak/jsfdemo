@@ -37,7 +37,21 @@ public class PersonManager {
 		if (personToRemove != null)
 			db.remove(personToRemove);
 	}
+	
+	public void updatePerson (int ile,Person person){
+		Person newPerson = new Person();
 
+		newPerson.setFirstName(person.getFirstName());
+		newPerson.setZipCode(person.getZipCode());
+		newPerson.setPin(person.getPin());
+		newPerson.setDateOfBirth(person.getDateOfBirth());
+		newPerson.setMarried(person.isMarried());
+		newPerson.setWeight(person.getWeight());
+		newPerson.setNumOfChildren(person.getNumOfChildren());
+		
+		db.set(ile, newPerson);
+	}
+	
 	public List<Person> getAllPersons() {
 		return db;
 	}

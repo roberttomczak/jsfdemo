@@ -1,7 +1,7 @@
 body {
    margin: 0;
    padding: 0;
-   background-color:  lightGray;
+   background-color: lightGray;
    font-family: Verdana, sans-serif;
    font-size: 0.9em;
 }
@@ -42,7 +42,7 @@ body {
   border: thin solid blue;
   background: #FFFFFF;	
   position:absolute;
-  left: 225px; 
+  left: 225px;
   right: 65px;
   top: 90px;
   height: 80%;
